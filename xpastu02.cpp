@@ -1,77 +1,77 @@
 /*
 *	MPC-MPG 2023 - Zaverecny projekt
 * 
-*	Autor:		Václav Pastušek
+*	Autor:		VÃ¡clav PastuÅ¡ek
 *	Student ID:	204437
 *	Email:		xpastu02@vut.cz
-*	Název: Fraktálovı svìt
+*	NÃ¡zev: FraktÃ¡lovÃ½ svÄ›t
 * 
-*	Klávesy: w, a, s, d, r, t, f, g, o, mezerník, PgUp, PgDn, Ctrl, Shift, šipky
+*	KlÃ¡vesy: w, a, s, d, r, t, f, g, o, mezernÃ­k, PgUp, PgDn, Ctrl, Shift, Å¡ipky
 *
 *	Seznam vypracovanych ukolu:
-*   1) Modelování objektù (3 b) - splnìno
-*	- 30 draèích køivek v rùznıch iteracích => jiné útvary (je zde vyuito rekurzivní volání funkce)
-*	- 5 krychlí
-*   2) Animace (1 b) - splnìno
-*	- draèí køivky se toèí i hıbají, to stejné krychle na støedu plátna, bezierovy pláty, atd.
-*	- pro zapnuti/vypnuti buï v menu nebo 't'
-*	- pro zrychlení lze dret 't'
-*	3) Osvìtlení (1 b) – splnìno
-*	- barevné osvìtlení se neustále mìní a zapne/vypne se klávesou 'o' nebo z menu
-*	- zmìna osvìtlení jde zastavit vypnutím èasu 't' nebo v menu a opaènì
-*   4) Volnı pohyb v horizontální rovinì (1 b) - splnìno
-*	- šipky pohyb z pohledu kamery jako v Minecraftu
-*	- WASD také pohyb, ale jen v ose x nebo z, nezávisí na pohledu kamery
-*	5) Menu (2 b) - splìno
+*   1) ModelovÃ¡nÃ­ objektÅ¯ (3 b) - splnÄ›no
+*	- 30 draÄÃ­ch kÅ™ivek v rÅ¯znÃ½ch iteracÃ­ch => jinÃ© Ãºtvary (je zde vyuÅ¾ito rekurzivnÃ­ volÃ¡nÃ­ funkce)
+*	- 5 krychlÃ­
+*   2) Animace (1 b) - splnÄ›no
+*	- draÄÃ­ kÅ™ivky se toÄÃ­ i hÃ½bajÃ­, to stejnÃ© krychle na stÅ™edu plÃ¡tna, bezierovy plÃ¡ty, atd.
+*	- pro zapnuti/vypnuti buÄ v menu nebo 't'
+*	- pro zrychlenÃ­ lze drÅ¾et 't'
+*	3) OsvÄ›tlenÃ­ (1 b) â€“ splnÄ›no
+*	- barevnÃ© osvÄ›tlenÃ­ se neustÃ¡le mÄ›nÃ­ a zapne/vypne se klÃ¡vesou 'o' nebo z menu
+*	- zmÄ›na osvÄ›tlenÃ­ jde zastavit vypnutÃ­m Äasu 't' nebo v menu a opaÄnÄ›
+*   4) VolnÃ½ pohyb v horizontÃ¡lnÃ­ rovinÄ› (1 b) - splnÄ›no
+*	- Å¡ipky pohyb z pohledu kamery jako v Minecraftu
+*	- WASD takÃ© pohyb, ale jen v ose x nebo z, nezÃ¡visÃ­ na pohledu kamery
+*	5) Menu (2 b) - splÄ›no
 *	- Reset pohybu a pozice nebo 'r'
 *	- Timer nebo 't'
 *	- Letani (nahoru/dolu) nebo 'Ctrl'
 *	- Osvetleni nebo 'o'
-*	- Textura (generovaná) nebo 'g'
-*	- Ukonèení programu nebo 'x'
+*	- Textura (generovanÃ¡) nebo 'g'
+*	- UkonÄenÃ­ programu nebo 'x'
 *	presum = 8b
 *	------------------------------------------------------
-*	6) Vıpis textu (2 b) - splnìno
-*	- vıpis je vlevém dolním rohu
-*	- vypisuje se zde pohyb, pauza, reset, osvìtlení, creative/survival, naraení do krychle, atd.
-*	- vıpis v levém horním rohu, reaguje na zmìnu okna
-*	- vypisuje se zde pozice vyhozeného míèe
-*	7) Ruèní svítilna (2 b) – X
+*	6) VÃ½pis textu (2 b) - splnÄ›no
+*	- vÃ½pis je vlevÃ©m dolnÃ­m rohu
+*	- vypisuje se zde pohyb, pauza, reset, osvÄ›tlenÃ­, creative/survival, naraÅ¾enÃ­ do krychle, atd.
+*	- vÃ½pis v levÃ©m hornÃ­m rohu, reaguje na zmÄ›nu okna
+*	- vypisuje se zde pozice vyhozenÃ©ho mÃ­Äe
+*	7) RuÄnÃ­ svÃ­tilna (2 b) â€“ X
 *	8) Blender model (2 b) - X
-*	9) Létání (2 b) – X
-*	10) Stoupání, klesání (1 b) - splnìno
-*	- 'Page up/down' funguje vdy
-*	- nebo je potøeba zapnout creativ mode pøes Ctrl nebo Menu a
-*	nahoru se lítá pøes mezerník a dolù pøes shift+mezerník
+*	9) LÃ©tÃ¡nÃ­ (2 b) â€“ X
+*	10) StoupÃ¡nÃ­, klesÃ¡nÃ­ (1 b) - splnÄ›no
+*	- 'Page up/down' funguje vÅ¾dy
+*	- nebo je potÅ™eba zapnout creativ mode pÅ™es Ctrl nebo Menu a
+*	nahoru se lÃ­tÃ¡ pÅ™es mezernÃ­k a dolÅ¯ pÅ™es shift+mezernÃ­k
 *	presum = 8 + 3 = 11b
 *	------------------------------------------------------
-*	11) Hod pøedmìtu (2 b) - splnìno
-*	- pøes klávesu 'f' se vyhodí míèek z pohledu kamery, kterı skáèe
-*	- míèek se kutálí/skáèe jen nìjakou dobu nebo jde vypnout stejnou klávesou 'f'
-*	- míèek lze vyhodnit odkudkoliv i ze vzduchu
-*	12) Simulace krokù (2 b) - splnìno
-*	- pøi pohybu pøes šipky i WASD je nadskakování, tedy kroky
-*	- (vylepšení, double jump, pokud døív kamera nespadne)
-*	- pokud neni zastaven èas, tak kamera po chvili klesne na puvodni uroven
-*	13) Tlaèítka (2 b) – splnìno
-*	- obrazovka je rozdìlena na 4 èásti a vypisuje do které èásti bylo kliknuto,
-*	vıpis je v dolním levém rohu
-*	14) Prùhlednost (1 b) – splnìno
-*	- poloprùhledná rùznobarevná krychle na støedu a bezierovy pláty
-*	15) Projekèní paprsek (1 b) – X
+*	11) Hod pÅ™edmÄ›tu (2 b) - splnÄ›no
+*	- pÅ™es klÃ¡vesu 'f' se vyhodÃ­ mÃ­Äek z pohledu kamery, kterÃ½ skÃ¡Äe
+*	- mÃ­Äek se kutÃ¡lÃ­/skÃ¡Äe jen nÄ›jakou dobu nebo jde vypnout stejnou klÃ¡vesou 'f'
+*	- mÃ­Äek lze vyhodnit odkudkoliv i ze vzduchu
+*	12) Simulace krokÅ¯ (2 b) - splnÄ›no
+*	- pÅ™i pohybu pÅ™es Å¡ipky i WASD je nadskakovÃ¡nÃ­, tedy kroky
+*	- (vylepÅ¡enÃ­, double jump, pokud dÅ™Ã­v kamera nespadne)
+*	- pokud neni zastaven Äas, tak kamera po chvili klesne na puvodni uroven
+*	13) TlaÄÃ­tka (2 b) â€“ splnÄ›no
+*	- obrazovka je rozdÄ›lena na 4 ÄÃ¡sti a vypisuje do kterÃ© ÄÃ¡sti bylo kliknuto,
+*	vÃ½pis je v dolnÃ­m levÃ©m rohu
+*	14) PrÅ¯hlednost (1 b) â€“ splnÄ›no
+*	- poloprÅ¯hlednÃ¡ rÅ¯znobarevnÃ¡ krychle na stÅ™edu a bezierovy plÃ¡ty
+*	15) ProjekÄnÃ­ paprsek (1 b) â€“ X
 *	presum = 11 + 7 = 18 b
 *	------------------------------------------------------
-*	16) Neprùchozí objekt (2 b) – splnìno
-*	- u statickıch krychlí nejde jít dovnitø a vrací to kameru na pøedchozí pozici
-*	- pøi viletìní na krychlí a pøepnutí na survival kameraman zaène skákat
-*	17) Texturování (2 b) – jen generován kódem -> 1b
-*	- u Beziérovıch plátù, dá se zapnout/vypnout pøes menu nebo 'g'
-*	18) Bézierovy pláty (2 b) – splnìno
-*	- nìkolik plátù jako kopeèky, rùznobarevné, poloprùhlené
-*	- utváøí jakoby pohybující se tıpí u ohništì, které reprezentuje pohybující se kostky
-*	19) Estetika scény - -1e-3b
-*	20) Vlastní rozšíøení – fraktály, double jump +1e-3b
-*	Suma celkem = 18+5 = 23 b
+*	16) NeprÅ¯chozÃ­ objekt (2 b) â€“ splnÄ›no
+*	- u statickÃ½ch krychlÃ­ nejde jÃ­t dovnitÅ™ a vracÃ­ to kameru na pÅ™edchozÃ­ pozici
+*	- pÅ™i viletÄ›nÃ­ na krychlÃ­ a pÅ™epnutÃ­ na survival kameraman zaÄne skÃ¡kat
+*	17) TexturovÃ¡nÃ­ (2 b) â€“ jen generovÃ¡n kÃ³dem -> 1b
+*	- u BeziÃ©rovÃ½ch plÃ¡tÅ¯, dÃ¡ se zapnout/vypnout pÅ™es menu nebo 'g'
+*	18) BÃ©zierovy plÃ¡ty (2 b) â€“ splnÄ›no
+*	- nÄ›kolik plÃ¡tÅ¯ jako kopeÄky, rÅ¯znobarevnÃ©, poloprÅ¯hlenÃ©
+*	- utvÃ¡Å™Ã­ jakoby pohybujÃ­cÃ­ se tÃ½pÃ­ u ohniÅ¡tÄ›, kterÃ© reprezentuje pohybujÃ­cÃ­ se kostky
+*	19) Estetika scÃ©ny - 0b
+*	20) VlastnÃ­ rozÅ¡Ã­Å™enÃ­ â€“ fraktÃ¡ly, double jump, skÃ¡kacÃ­ koule se tÅ™enÃ­m 1b
+*	Suma celkem = 18+6 = 24 b
 *	------------------------------------------------------
 *   Neco vlastniho co by mohlo byt take hodnoceno:
 *
@@ -89,7 +89,7 @@
 // PI/180
 #define PI        3.141592653589793f
 #define PIover180 0.017453292519943f
-#define M_PI_4 0.78539816339744830962f // pi/4 rad = 45°
+#define M_PI_4 0.78539816339744830962f // pi/4 rad = 45Â°
 
 // globalni promenne pro transformace
 float xnew = 0, ynew = 0;
@@ -140,27 +140,27 @@ float farPlane = 200.0f;
 
 //kamera
 float cameraSpeed = 1.0f; // rychlost pohybu kamery
-float maxHeight = 2.0f; // maximální vıška kamery
-float minHeight = 0.0f; // minimální vıška kamery
-float maxHoverTime = 2.f; // maximální doba, po kterou kamera mùe zùstat ve vzduchu
-float hoverTime = 0.0f; // aktuální doba, po kterou kamera zùstává ve vzduchu
+float maxHeight = 2.0f; // maximÃ¡lnÃ­ vÃ½Å¡ka kamery
+float minHeight = 0.0f; // minimÃ¡lnÃ­ vÃ½Å¡ka kamery
+float maxHoverTime = 2.f; // maximÃ¡lnÃ­ doba, po kterou kamera mÅ¯Å¾e zÅ¯stat ve vzduchu
+float hoverTime = 0.0f; // aktuÃ¡lnÃ­ doba, po kterou kamera zÅ¯stÃ¡vÃ¡ ve vzduchu
 
 //creative
 bool creative = false;
 
-// Osvìtlení
-GLfloat light_position[] = { 0.0, 10.0, 0.0, 10.0 }; // umístìní svìtla
-GLfloat light_ambient[] = { 0.8, 0.8, 0.2, 1.0 }; // ambientní barva svìtla
-GLfloat light_diffuse[] = { 1., 1.0, 1.0, 0.5 }; // difuzní barva svìtla
-bool svetlo_je = false; // Osvìtlení
+// OsvÄ›tlenÃ­
+GLfloat light_position[] = { 0.0, 10.0, 0.0, 10.0 }; // umÃ­stÄ›nÃ­ svÄ›tla
+GLfloat light_ambient[] = { 0.8, 0.8, 0.2, 1.0 }; // ambientnÃ­ barva svÄ›tla
+GLfloat light_diffuse[] = { 1., 1.0, 1.0, 0.5 }; // difuznÃ­ barva svÄ›tla
+bool svetlo_je = false; // OsvÄ›tlenÃ­
 int color_index = 0;
 
 // text v rohu
-char last_command[50] = "Stisknete libovolnou klavesu"; // Text posledního pøíkazu uivatelského rozhraní
-bool draw_text = true; // Pøíznak pro vykreslování textu
+char last_command[50] = "Stisknete libovolnou klavesu"; // Text poslednÃ­ho pÅ™Ã­kazu uÅ¾ivatelskÃ©ho rozhranÃ­
+bool draw_text = true; // PÅ™Ã­znak pro vykreslovÃ¡nÃ­ textu
 char ball_text[200] = "Pozice koule: Chybi";
 
-// camera a míè pro vyhození po balistice
+// camera a mÃ­Ä pro vyhozenÃ­ po balistice
 GLfloat cameraX = 0.0f;
 GLfloat cameraY = 0.0f;
 GLfloat cameraZ = 0.0f;
@@ -176,7 +176,7 @@ bool objectFlying = false;
 int ballTimer = 0;
 bool ball_go_up = true;
 
-// èásti okna pro kliknutí
+// ÄÃ¡sti okna pro kliknutÃ­
 bool clickedTopLeft = false;
 bool clickedTopRight = false;
 bool clickedBottomLeft = false;
@@ -192,7 +192,7 @@ bool texture_is = true;
 // timer
 long int timer = 0;
 
-// Globální pole pro uchování textury
+// GlobÃ¡lnÃ­ pole pro uchovÃ¡nÃ­ textury
 GLubyte textureData[textureHeight][textureWidth][3];
 
 // bezieruv plat jako kopecek
@@ -274,7 +274,7 @@ void changeLightAmbient(int value)
 // funkce volana pri zmene velikosti sceny
 void OnReshape(int w, int h)            // event handler pro zmenu velikosti okna
 {
-	// Aktualizace globálních promìnnıch s novımi rozmìry okna
+	// Aktualizace globÃ¡lnÃ­ch promÄ›nnÃ½ch s novÃ½mi rozmÄ›ry okna
 	windowWidth = w;
 	windowHeight = h;
 
@@ -295,16 +295,16 @@ void OnInit(void)
 	glEnable(GL_CULL_FACE);
 }
 
-// Funkce pro generování vlastní textury
+// Funkce pro generovÃ¡nÃ­ vlastnÃ­ textury
 void generateTexture() {
 	for (int i = 0; i < textureHeight; i++) {
 		for (int j = 0; j < textureWidth; j++) {
-			// Generování hodnot barev pixelù textury
+			// GenerovÃ¡nÃ­ hodnot barev pixelÅ¯ textury
 			GLubyte r = static_cast<GLubyte>(i % 256);
 			GLubyte g = static_cast<GLubyte>(j % 256);
 			GLubyte b = static_cast<GLubyte>((i + j) % 256);
 
-			// Nastavení barev pixelù textury
+			// NastavenÃ­ barev pixelÅ¯ textury
 			textureData[i][j][0] = r;
 			textureData[i][j][1] = g;
 			textureData[i][j][2] = b;
@@ -312,14 +312,14 @@ void generateTexture() {
 	}
 }
 
-// Funkce pro naètení textury a nastavení parametrù texturování
+// Funkce pro naÄtenÃ­ textury a nastavenÃ­ parametrÅ¯ texturovÃ¡nÃ­
 void loadTexture() {
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, textureWidth, textureHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, textureData);
 }
 
-// Funkce pro vykreslení textu
+// Funkce pro vykreslenÃ­ textu
 void drawText(const char* text, int x, int y) {
 	glMatrixMode(GL_PROJECTION);
 	glPushMatrix();
@@ -365,13 +365,13 @@ void DrawPlane(int size)
 
 	if (svetlo_je)
 	{
-		glLightfv(GL_LIGHT0, GL_POSITION, light_position); // nastavení pozice svìtla
-		glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient); // nastavení ambientní barvy svìtla
-		glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse); // nastavení difuzní barvy svìtla
-		glEnable(GL_LIGHT0); // zapnutí svìtla
+		glLightfv(GL_LIGHT0, GL_POSITION, light_position); // nastavenÃ­ pozice svÄ›tla
+		glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient); // nastavenÃ­ ambientnÃ­ barvy svÄ›tla
+		glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse); // nastavenÃ­ difuznÃ­ barvy svÄ›tla
+		glEnable(GL_LIGHT0); // zapnutÃ­ svÄ›tla
 
-		glEnable(GL_LIGHTING); // zapnutí osvìtlení
-		glEnable(GL_DEPTH_TEST); // zapnutí testování hloubky
+		glEnable(GL_LIGHTING); // zapnutÃ­ osvÄ›tlenÃ­
+		glEnable(GL_DEPTH_TEST); // zapnutÃ­ testovÃ¡nÃ­ hloubky
 
 	}
 	glColor3f(0.0f, 0.7f, 0.2f);
@@ -395,14 +395,14 @@ void DrawPlane(int size)
 void checkCollisionWithCube(float cubeX, float cubeY, float cubeZ, float cubeSize, float& cameraX, float& cameraY, float& cameraZ) {
 	float CubeSize = cubeSize / 1.0;
 
-	// Pokud je kamera uvnitø krychle, vrátit ji na pøedchozí platnou pozici
+	// Pokud je kamera uvnitÅ™ krychle, vrÃ¡tit ji na pÅ™edchozÃ­ platnou pozici
 	if (tranx < -cubeX + CubeSize && tranx > - cubeX - CubeSize &&
 		trany > cubeY - CubeSize && trany < cubeY + CubeSize &&
 		tranz < -cubeZ + CubeSize && tranz > -cubeZ - CubeSize
 		) {
 		
 		strcpy_s(last_command, sizeof last_command, "Narazil jsi do krychle");;
-		// Vrácení na pøedchozí platnou pozici
+		// VrÃ¡cenÃ­ na pÅ™edchozÃ­ platnou pozici
 		
 		tranx = tranx_pred;
 		trany = trany_pred;
@@ -436,13 +436,13 @@ void DrawCube(float x, float y, float z, float size, bool move) {
 
 	if (svetlo_je) 
 	{
-		glLightfv(GL_LIGHT0, GL_POSITION, light_position); // nastavení pozice svìtla
-		glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient); // nastavení ambientní barvy svìtla
-		glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse); // nastavení difuzní barvy svìtla
-		glEnable(GL_LIGHT0); // zapnutí svìtla
+		glLightfv(GL_LIGHT0, GL_POSITION, light_position); // nastavenÃ­ pozice svÄ›tla
+		glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient); // nastavenÃ­ ambientnÃ­ barvy svÄ›tla
+		glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse); // nastavenÃ­ difuznÃ­ barvy svÄ›tla
+		glEnable(GL_LIGHT0); // zapnutÃ­ svÄ›tla
 
-		glEnable(GL_LIGHTING); // zapnutí osvìtlení
-		glEnable(GL_DEPTH_TEST); // zapnutí testování hloubky
+		glEnable(GL_LIGHTING); // zapnutÃ­ osvÄ›tlenÃ­
+		glEnable(GL_DEPTH_TEST); // zapnutÃ­ testovÃ¡nÃ­ hloubky
 	}
 
 	glDisable(GL_CULL_FACE);
@@ -450,7 +450,7 @@ void DrawCube(float x, float y, float z, float size, bool move) {
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	GLfloat rgba[] = { 1.0f, 1.0f, 1.0f, 0.8f }; // bílá barva s 50% prùhledností
+	GLfloat rgba[] = { 1.0f, 1.0f, 1.0f, 0.8f }; // bÃ­lÃ¡ barva s 50% prÅ¯hlednostÃ­
 	glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, rgba);
 	glPushMatrix();
 	yOffset = (xOffset + dragonWidth) / 16.;
@@ -544,7 +544,7 @@ void DragonCurve(int sign, float offset) {
 
 	glPushMatrix();
 
-	// Kreslení draèí køivky
+	// KreslenÃ­ draÄÃ­ kÅ™ivky
 	glLineWidth(2);
 	glTranslatef(sign*30, 23, 0);
 	glTranslatef(sign*xOffset, 0, 0);
@@ -568,37 +568,37 @@ void DragonCurve(int sign, float offset) {
 void renderBezierSurface(float x, float y, float z) {
 	int u, v;
 
-	glPushMatrix(); // Uloení transformaèní matice
-	glTranslatef(x, y+0.5, z); // Posunutí plátna
+	glPushMatrix(); // UloÅ¾enÃ­ transformaÄnÃ­ matice
+	glTranslatef(x, y+0.5, z); // PosunutÃ­ plÃ¡tna
 	glRotatef(-90., 1., 0., 0.);
 	glMap2f(GL_MAP2_VERTEX_3, 0, 1, 3, 4, 0, 1, 12, 4, &controlPoints[0][0][0]);
 
 	glEnable(GL_MAP2_VERTEX_3);
-	glEnable(GL_TEXTURE_2D); // Zapnutí texturování
-	GLuint textureID; // Deklarace promìnné pro identifikátor textury
-	// Generování texturového identifikátoru
+	glEnable(GL_TEXTURE_2D); // ZapnutÃ­ texturovÃ¡nÃ­
+	GLuint textureID; // Deklarace promÄ›nnÃ© pro identifikÃ¡tor textury
+	// GenerovÃ¡nÃ­ texturovÃ©ho identifikÃ¡toru
 	glGenTextures(1, &textureID);
 	glBindTexture(GL_TEXTURE_2D, textureID); // Vazba textury
-	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); // Pouití plnıch ploch
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); // PouÅ¾itÃ­ plnÃ½ch ploch
 
-	// Vygenerování rùznobarevného plátna
+	// VygenerovÃ¡nÃ­ rÅ¯znobarevnÃ©ho plÃ¡tna
 	for (u = 0; u < 30; u++) {
 		glBegin(GL_TRIANGLE_STRIP);
 		for (v = 0; v <= 30; v++) {
-			// Vıpoèet barevného pøechodu
+			// VÃ½poÄet barevnÃ©ho pÅ™echodu
 			GLfloat color[4];
 			color[0] = u / 30.0;
 			color[1] = v / 30.0;
 			color[2] = 1.0 - (u / 30.0);
 			color[3] = 0.5;
-			glColor4fv(color); // Nastavení barvy
+			glColor4fv(color); // NastavenÃ­ barvy
 
 			glEvalCoord2f(u / 30.0, v / 30.0);
 			glEvalCoord2f((u + 1) / 30.0, v / 30.0);
 
 			if(texture_is)
 			{
-			// Vıpoèet texturovacích souøadnic
+			// VÃ½poÄet texturovacÃ­ch souÅ™adnic
 			GLfloat texCoordU = u / 30.0;
 			GLfloat texCoordV = v / 30.0;
 
@@ -612,8 +612,8 @@ void renderBezierSurface(float x, float y, float z) {
 		glEnd();
 	}
 
-	glDisable(GL_TEXTURE_2D); // Vypnutí texturování
-	glPopMatrix(); // Obnovení transformaèní matice
+	glDisable(GL_TEXTURE_2D); // VypnutÃ­ texturovÃ¡nÃ­
+	glPopMatrix(); // ObnovenÃ­ transformaÄnÃ­ matice
 }
 
 // funkce volana pri prekresleni sceny
@@ -665,7 +665,7 @@ void OnDisplay(void)
 		glDisable(GL_LIGHTING);
 	}
 
-	//Draèí køivky
+	//DraÄÃ­ kÅ™ivky
 	DragonCurve(1, 0);
 	DragonCurve(-1, 2.5);
 	
@@ -678,7 +678,7 @@ void OnDisplay(void)
 	DrawCube(-cube_p, 1, cube_p, cube_s, true);
 	DrawCube(-cube_p, 0, -cube_p, cube_s, false);
 
-	// Hození koule po eliptice s odrazem
+	// HozenÃ­ koule po eliptice s odrazem
 	if (objectFlying)
 	{
 		glPushMatrix();
@@ -701,15 +701,15 @@ void OnDisplay(void)
 	glRotatef(-rOffset, 1., 0., 0.);
 	glTranslatef(-10. - xOffset / 10., -10., 0.);
 
-	// Bezieruv Plát
-	int numObjects = 50; // Poèet objektù
-	float radius = (150.0 + xOffset) /3.; // Polomìr kruhu
+	// Bezieruv PlÃ¡t
+	int numObjects = 50; // PoÄet objektÅ¯
+	float radius = (150.0 + xOffset) /3.; // PolomÄ›r kruhu
 	glRotatef(rOffset, 0., 1., 0.);
 	for (int i = 0; i < numObjects; i++) {
-		float angle = (2.0 * PI * i) / numObjects; // Úhel pro umístìní objektu na krunici
-		float x = radius * cos(angle); // Vıpoèet souøadnice x
-		float y = 0.0; // Souøadnice y (v tomto pøípadì zùstává konstantní)
-		float z = radius * sin(angle); // Vıpoèet souøadnice z
+		float angle = (2.0 * PI * i) / numObjects; // Ãšhel pro umÃ­stÄ›nÃ­ objektu na kruÅ¾nici
+		float x = radius * cos(angle); // VÃ½poÄet souÅ™adnice x
+		float y = 0.0; // SouÅ™adnice y (v tomto pÅ™Ã­padÄ› zÅ¯stÃ¡vÃ¡ konstantnÃ­)
+		float z = radius * sin(angle); // VÃ½poÄet souÅ™adnice z
 
 		renderBezierSurface(x, y, z);
 	}
@@ -722,7 +722,7 @@ void OnDisplay(void)
     glutSwapBuffers(); 
 }
 
-// èítaè
+// ÄÃ­taÄ
 void onTimer(int value)
 {
 	timer++;
@@ -835,12 +835,12 @@ void createMenu()
 	glutAddMenuEntry("Ano", MENU_TIMERON);
 	glutAddMenuEntry("Ne", MENU_TIMEROFF);
 
-	// létání nahoru a dolù
+	// lÃ©tÃ¡nÃ­ nahoru a dolÅ¯
 	int idFly = glutCreateMenu(onMenu);
 	glutAddMenuEntry("Ano", MENU_FLYON);
 	glutAddMenuEntry("Ne", MENU_FLYOFF);
 
-	// Osvìtlení
+	// OsvÄ›tlenÃ­
 	int idLight = glutCreateMenu(onMenu);
 	glutAddMenuEntry("Ano", MENU_LIGHTON);
 	glutAddMenuEntry("Ne", MENU_LIGHTOFF);
@@ -881,13 +881,13 @@ void OnMouseButton(int button, int state, int x, int y)
 		}
 	}
 
-	// rozdeleni obrazovky na 4 èásti, kde se klikne
+	// rozdeleni obrazovky na 4 ÄÃ¡sti, kde se klikne
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-		// Získání normalizovanıch souøadnic myši
+		// ZÃ­skÃ¡nÃ­ normalizovanÃ½ch souÅ™adnic myÅ¡i
 		float normalizedX = static_cast<float>(x) / windowWidth;
 		float normalizedY = static_cast<float>(y) / windowHeight;
 
-		// Zjištìní do které èásti obrazovky bylo kliknuto
+		// ZjiÅ¡tÄ›nÃ­ do kterÃ© ÄÃ¡sti obrazovky bylo kliknuto
 		if (normalizedX < 0.5f && normalizedY >= 0.5f) {
 			clickedTopLeft = !clickedTopLeft;
 			strcpy_s(last_command, sizeof last_command, "Kliknuto nahore vlevo");
@@ -1029,12 +1029,12 @@ void OnSpecial(int key, int mx, int my)
 		case GLUT_KEY_DOWN:
 		case GLUT_KEY_LEFT:
 		case GLUT_KEY_RIGHT:
-			if (trany < maxHeight) // pokud kamera není pøíliš vysoko, pohybuje se nahoru
+			if (trany < maxHeight) // pokud kamera nenÃ­ pÅ™Ã­liÅ¡ vysoko, pohybuje se nahoru
 			{
 				trany += cameraSpeed;
-				hoverTime = 0.0f; // resetuje dobu zùstávání ve vzduchu
+				hoverTime = 0.0f; // resetuje dobu zÅ¯stÃ¡vÃ¡nÃ­ ve vzduchu
 			}
-			else // pokud dosáhla maximální vıšky, zaène se sniovat
+			else // pokud dosÃ¡hla maximÃ¡lnÃ­ vÃ½Å¡ky, zaÄne se sniÅ¾ovat
 			{
 				trany -= cameraSpeed;
 			}
@@ -1043,20 +1043,20 @@ void OnSpecial(int key, int mx, int my)
 			break;
 		}
 
-		// omezení vıšky kamery na minimální hodnoty
+		// omezenÃ­ vÃ½Å¡ky kamery na minimÃ¡lnÃ­ hodnoty
 		if (trany < minHeight)
 		{
 			trany = minHeight;
 		}
 
-		// pokud kamera zùstává ve vzduchu pøíliš dlouho, spadne dolù
-		if (trany > minHeight) // kamera je nahoøe
+		// pokud kamera zÅ¯stÃ¡vÃ¡ ve vzduchu pÅ™Ã­liÅ¡ dlouho, spadne dolÅ¯
+		if (trany > minHeight) // kamera je nahoÅ™e
 		{
-			hoverTime += 1.f; // zvıší dobu zùstávání ve vzduchu
-			if (hoverTime >= maxHoverTime) // pokud je doba pøekroèena, spadne dolù
+			hoverTime += 1.f; // zvÃ½Å¡Ã­ dobu zÅ¯stÃ¡vÃ¡nÃ­ ve vzduchu
+			if (hoverTime >= maxHoverTime) // pokud je doba pÅ™ekroÄena, spadne dolÅ¯
 			{
 				trany -= cameraSpeed;
-				hoverTime = 0.0f; // resetuje dobu zùstávání ve vzduchu
+				hoverTime = 0.0f; // resetuje dobu zÅ¯stÃ¡vÃ¡nÃ­ ve vzduchu
 			}
 		}
 	}
@@ -1202,12 +1202,12 @@ void onKeyboard(unsigned char key, int mx, int my)
 		case 'a':
 		case 's':
 		case 'd':
-			if (trany < maxHeight) // pokud kamera není pøíliš vysoko, pohybuje se nahoru
+			if (trany < maxHeight) // pokud kamera nenÃ­ pÅ™Ã­liÅ¡ vysoko, pohybuje se nahoru
 			{
 				trany += cameraSpeed;
-				hoverTime = 0.0f; // resetuje dobu zùstávání ve vzduchu
+				hoverTime = 0.0f; // resetuje dobu zÅ¯stÃ¡vÃ¡nÃ­ ve vzduchu
 			}
-			else // pokud dosáhla maximální vıšky, zaène se sniovat
+			else // pokud dosÃ¡hla maximÃ¡lnÃ­ vÃ½Å¡ky, zaÄne se sniÅ¾ovat
 			{
 				trany -= cameraSpeed;
 			}
@@ -1216,21 +1216,21 @@ void onKeyboard(unsigned char key, int mx, int my)
 			break;
 		}
 
-		// omezení vıšky kamery na minimální hodnoty
+		// omezenÃ­ vÃ½Å¡ky kamery na minimÃ¡lnÃ­ hodnoty
 		if (trany < minHeight)
 		{
 			trany = minHeight;
 		}
 
 
-		// pokud kamera zùstává ve vzduchu pøíliš dlouho, spadne dolù
-		if (trany > minHeight) // kamera je nahoøe
+		// pokud kamera zÅ¯stÃ¡vÃ¡ ve vzduchu pÅ™Ã­liÅ¡ dlouho, spadne dolÅ¯
+		if (trany > minHeight) // kamera je nahoÅ™e
 		{
-			hoverTime += 1.f; // zvıší dobu zùstávání ve vzduchu
-			if (hoverTime >= maxHoverTime) // pokud je doba pøekroèena, spadne dolù
+			hoverTime += 1.f; // zvÃ½Å¡Ã­ dobu zÅ¯stÃ¡vÃ¡nÃ­ ve vzduchu
+			if (hoverTime >= maxHoverTime) // pokud je doba pÅ™ekroÄena, spadne dolÅ¯
 			{
 				trany -= cameraSpeed;
-				hoverTime = 0.0f; // resetuje dobu zùstávání ve vzduchu
+				hoverTime = 0.0f; // resetuje dobu zÅ¯stÃ¡vÃ¡nÃ­ ve vzduchu
 			}
 		}
 	}
@@ -1258,16 +1258,16 @@ void update(int value)
 		ballX += ballSpeedX;
 		ballY += ballSpeedY;
 		ballZ += ballSpeedZ;
-		// zpomalení
+		// zpomalenÃ­
 		ballSpeedX *= 0.999;
 		ballSpeedZ *= 0.999;
 
 		if (ballY > -1.0) {
-			// Utlumování skoku
+			// UtlumovÃ¡nÃ­ skoku
 			ballSpeedY -= 0.001;
 		}
 		else {
-			// Skákání nahoru a dolù
+			// SkÃ¡kÃ¡nÃ­ nahoru a dolÅ¯
 			if (ballSpeedY < -0.01)
 				ballSpeedY *= -0.9;
 			else if (ballSpeedY > 0.01)
@@ -1277,7 +1277,7 @@ void update(int value)
 		}
 
 		if (ballY < -0.0f) {
-			// Odráení od podlahy
+			// OdrÃ¡Å¾enÃ­ od podlahy
 			ballSpeedY *= -0.9f;
 		}
 	}
@@ -1314,9 +1314,9 @@ int main(int argc, char* argv[])
 	glutInitWindowSize(windowWidth, windowHeight);			// nastaveni pocatecni velikosti dale oteviranych oken
     glutInitWindowPosition(200, 200);		// nastaveni pocatecniho umisteni dale oteviranych oken
     
-	glutCreateWindow("Projekt 2023 – Autor: xpastu02");	// vytvoreni okna
+	glutCreateWindow("Projekt 2023 â€“ Autor: xpastu02");	// vytvoreni okna
 
-	generateTexture(); // Generování vlastní textury
+	generateTexture(); // GenerovÃ¡nÃ­ vlastnÃ­ textury
 
 	// registracni funkce
 	glutDisplayFunc(OnDisplay);				// registrace funkce volane pri prekreslovani aktualniho okna
@@ -1333,7 +1333,7 @@ int main(int argc, char* argv[])
 	// inicializace sceny
 	OnInit();
 
-	// spuštìní èasovaèe pro zmìnu ambientního svìtla
+	// spuÅ¡tÄ›nÃ­ ÄasovaÄe pro zmÄ›nu ambientnÃ­ho svÄ›tla
 	glutTimerFunc(1000, changeLightAmbient, 0);
 
 	// hozeni koule
