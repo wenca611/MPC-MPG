@@ -77,6 +77,9 @@ presum = 11 + 7 = 18 b
 Suma celkem = 18+6 = 24 b
 
 ## Ukázky:
-
+# ![Obr. 1](images/1.png)
+# ![Obr. 2](images/2.png)
+# ![Obr. 3](images/3.png)
+# ![Obr. 4](images/4.png)
 
 
