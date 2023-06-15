@@ -1,0 +1,72 @@
+﻿  xpastu02.cpp
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(153,48): warning C4305: inicializování: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(333,30): warning C4305: argument: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(396,17): warning C4244: inicializování: double se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(419,14): warning C4244: argument: int se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(456,36): warning C4244: =: double se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(457,30): warning C4244: argument: double se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(458,20): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(518,27): warning C4267: inicializování: Převod z: size_t na: int, může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(549,19): warning C4244: argument: int se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(552,18): warning C4244: argument: int se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(556,49): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(556,33): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(556,21): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(558,53): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(558,35): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(558,19): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(560,39): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(560,26): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(560,64): warning C4267: argument: Převod z: size_t na: int, může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(572,19): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(590,17): warning C4244: =: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(591,17): warning C4244: =: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(592,19): warning C4244: =: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(596,30): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(596,20): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(597,36): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(597,26): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(602,22): warning C4244: inicializování: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(603,22): warning C4244: inicializování: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(606,30): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(606,20): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(608,36): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(609,36): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(609,20): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(623,36): warning C4305: argument: zkrácení z: double na: GLclampf
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(675,20): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(676,29): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(676,21): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(676,11): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(677,31): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(677,22): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(677,11): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(678,31): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(678,23): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(678,11): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(679,32): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(679,23): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(679,11): warning C4244: argument: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(697,25): warning C4305: argument: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(698,19): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(700,16): warning C4244: argument: double se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(702,20): warning C4244: argument: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(706,15): warning C4244: inicializování: double se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(709,15): warning C4244: inicializování: double se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(752,13): warning C4244: =: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(757,13): warning C4244: =: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(874,9): warning C4244: =: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(875,9): warning C4244: =: int se převádí na float; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1262,22): warning C4305: *=: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1263,22): warning C4305: *=: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1267,23): warning C4305: -=: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1272,23): warning C4305: *=: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1274,23): warning C4305: *=: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1298,23): warning C4244: =: double se převádí na GLfloat; může dojít ke ztrátě dat.
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1299,19): warning C4305: =: zkrácení z: double na: GLfloat
+D:\FEKT\Ing\OPENCV\ProjectAll\MPG_PROJECT_xpastu02\xpastu02.cpp(1300,24): warning C4244: =: double se převádí na GLfloat; může dojít ke ztrátě dat.
+  Vytváří se kód.
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 207 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Vytváření kódu se dokončilo.
+  MPG_PROJECT_xpastu02.vcxproj -> D:\FEKT\Ing\OPENCV\ProjectAll\x64\Release\MPG_PROJECT_xpastu02.exe
