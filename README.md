@@ -73,6 +73,7 @@ presum = 11 + 7 = 18 b
 - utváří jakoby pohybující se týpí u ohniště, které reprezentuje pohybující se kostky
 19) Estetika scény - 0b
 20) Vlastní rozšíření – fraktály, double jump, skákací koule se třením 1b
+
 Suma celkem = 18+6 = 24 b
 
 ## Ukázky:
